@@ -1,25 +1,21 @@
-import { footerLinks } from '../lib/data'
-import Link from 'next/link'
+import { footerLinks } from "../lib/data";
+import Link from "next/link";
 
 export default function Footer() {
   const renderedLinks = footerLinks.map(({ name, href, icon: Icon }) => {
     return (
-      <Link
-        key={name}
-        href={href}
-        target="_blank"
-      >
-        <Icon className="text-3xl hover:text-sjsu-gold transition-colors" />
+      <Link key={name} href={href} target="_blank">
+        <Icon className="text-3xl transition-colors hover:text-sjsu-gold" />
       </Link>
-    )
-  })
+    );
+  });
 
   return (
-    <footer className="py-12 text-gray-400/50 flex flex-col items-center">
-      <div className="flex gap-4 justify-center items-center mb-4">
+    <footer className="flex flex-col items-center py-12 text-gray-400/50">
+      <div className="mb-4 flex items-center justify-center gap-4">
         {renderedLinks}
       </div>
-      {new Date().getFullYear()} © Alex Ross
+      {new Date().getFullYear()} © Prashant Timilsina
     </footer>
-  )
+  );
 }

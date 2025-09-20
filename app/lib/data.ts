@@ -3,522 +3,446 @@ import {
   FaLinkedin,
   FaDumbbell,
   FaPlaneDeparture,
-  FaEnvelope,
+  FaFacebook,
   FaBookOpen,
-} from 'react-icons/fa6'
-import { PiTennisBallFill } from 'react-icons/pi'
-import html from '@/public/html.png'
-import css from '@/public/css.png'
-import flask from '@/public/flask.png'
-import typescript from '@/public/typescript.png'
-import react from '@/public/react.png'
-import next from '@/public/next.png'
-import tailwind from '@/public/tailwind.png'
-import node from '@/public/node.png'
-import express from '@/public/express.png'
-import mongodb from '@/public/mongo.png'
-import javascript from '@/public/javascript.png'
-import c from '@/public/c.png'
-import java from '@/public/java.png'
-import python from '@/public/python.png'
-import git from '@/public/git.png'
-import maria from '@/public/maria.png'
-import mysql from '@/public/mysql.png'
-import vscode from '@/public/vscode.png'
-import eclipse from '@/public/eclipse.png'
-import postman from '@/public/postman.png'
-import sql from '@/public/sql.png'
-import prisma from '@/public/prisma.png'
-import villa from '@/public/villa.png'
-import warriors from '@/public/warriors.png'
-import boxd from '@/public/boxd.png'
-import atcq from '@/public/atcq.png'
-import vercel from '@/public/vercel.png'
-import split from '@/public/split.png'
-import spotlefy from '@/public/spotlefy.png'
-import spotify from '@/public/spotify.png'
-import cinefindPersonal from '@/public/cinefind_me.png'
-import tmdb from '@/public/tmdb.png'
-import jinja from '@/public/jinja.png'
-import cron from '@/public/cron.png'
-import reddit from '@/public/reddit.png'
-import discogs from '@/public/discogs.png'
-import rpi from '@/public/rpi.png'
-import vinylBot from '@/public/vinyl-bot.png'
-import giants from '@/public/giants.png'
-import amc from '@/public/amc.png'
-import lifetime from '@/public/lifetime.png'
-import sjsu from '@/public/sjsu.png'
-import cinefindLogoC from '@/public/cinefind-logo-c.png'
-import figma from '@/public/figma.png'
-import niners from '@/public/49ers.png'
-import scikit from '@/public/scikit.png'
-import pandas from '@/public/pandas.png'
-import shap from '@/public/shap.png'
-import twitterBot from '@/public/twitter-bot.png'
-import githubBanner from '@/public/git-banner.jpg'
-import pl from '@/public/pl.png'
-import beautifulsoup from '@/public/beautifulsoup.png'
-import cinefindWebApp from '@/public/cinefind-web-app.png'
-import cinefindEngine from '@/public/cinefind-engine.png'
-import mailgun from '@/public/mailgun.png'
-
+} from "react-icons/fa6";
+import { PiTennisBallFill } from "react-icons/pi";
+import html from "@/public/html.png";
+import css from "@/public/css.png";
+import flask from "@/public/flask.png";
+import typescript from "@/public/typescript.png";
+import react from "@/public/react.png";
+import next from "@/public/next.png";
+import tailwind from "@/public/tailwind.png";
+import node from "@/public/node.png";
+import express from "@/public/express.png";
+import mongodb from "@/public/mongo.png";
+import javascript from "@/public/javascript.png";
+import c from "@/public/c.png";
+import java from "@/public/java.png";
+import python from "@/public/python.png";
+import git from "@/public/git.png";
+import maria from "@/public/maria.png";
+import mysql from "@/public/mysql.png";
+import vscode from "@/public/vscode.png";
+import eclipse from "@/public/eclipse.png";
+import postman from "@/public/postman.png";
+import sql from "@/public/sql.png";
+import prisma from "@/public/prisma.png";
+import villa from "@/public/villa.png";
+import warriors from "@/public/warriors.png";
+import boxd from "@/public/boxd.png";
+import atcq from "@/public/atcq.png";
+import vercel from "@/public/vercel.png";
+import split from "@/public/split.png";
+import spotlefy from "@/public/spotlefy.png";
+import spotify from "@/public/spotify.png";
+import cinefindPersonal from "@/public/cinefind_me.png";
+import tmdb from "@/public/tmdb.png";
+import jinja from "@/public/jinja.png";
+import cron from "@/public/cron.png";
+import reddit from "@/public/reddit.png";
+import discogs from "@/public/discogs.png";
+import rpi from "@/public/rpi.png";
+import vinylBot from "@/public/vinyl-bot.png";
+import giants from "@/public/giants.png";
+import amc from "@/public/amc.png";
+import lifetime from "@/public/lifetime.png";
+import sjsu from "@/public/sjsu.png";
+import cinefindLogoC from "@/public/cinefind-logo-c.png";
+import figma from "@/public/figma.png";
+import niners from "@/public/49ers.png";
+import scikit from "@/public/scikit.png";
+import pandas from "@/public/pandas.png";
+import shap from "@/public/shap.png";
+import twitterBot from "@/public/twitter-bot.png";
+import githubBanner from "@/public/git-banner.jpg";
+import pl from "@/public/pl.png";
+import beautifulsoup from "@/public/beautifulsoup.png";
+import cinefindWebApp from "@/public/cinefind-web-app.png";
+import cinefindEngine from "@/public/cinefind-engine.png";
+import mailgun from "@/public/mailgun.png";
+import cloudinary from "@/public/cloudinary.png";
+import reactform from "@/public/reactform.png";
+import darazWebApp from "@/public/darazwebapp.jpg";
+import rentalWebApp from "@/public/rentalwebapp.jpg";
+import blogwebapp from "@/public/blogwebapp.jpg";
+import tourwebapp from "@/public/tourwebapp.jpg";
+import nextauth from "@/public/nextauth.jpg";
+import chatwebapp from "@/public/chatwebapp.jpg";
+import socketio from "@/public/socketicon.png";
+import github from "@/public/github.jpg";
+import tick from "@/public/tick.png";
 export const links = [
   {
-    hash: '#home',
-    label: 'Home',
+    hash: "#home",
+    label: "Home",
   },
   // {
   //   hash: '#about',
   //   label: 'About',
   // },
   {
-    hash: '#skills',
-    label: 'Skills',
+    hash: "#skills",
+    label: "Skills",
   },
   {
-    hash: '#projects',
-    label: 'Projects',
+    hash: "#projects",
+    label: "Projects",
   },
   {
-    hash: '#experience',
-    label: 'Experience',
+    hash: "#experience",
+    label: "Experience",
   },
   {
-    hash: '#contact',
-    label: 'Contact',
+    hash: "#contact",
+    label: "Contact",
   },
-] as const
+] as const;
 
 export const socials = [
   {
-    name: 'LinkedIn',
+    name: "LinkedIn",
     icon: FaLinkedin,
-    href: 'https://www.linkedin.com/in/alex-ross-32b278236/',
+    href: "https://www.linkedin.com/in/prashant-timilsina",
   },
   {
-    name: 'GitHub',
+    name: "GitHub",
     icon: FaGithub,
-    href: 'https://www.github.com/aross2010',
+    href: "https://github.com/PrashantTimilsina",
   },
   {
-    name: 'Email',
-    icon: FaEnvelope,
-    href: 'mailto:@alex.ross@sjsu.edu',
+    name: "Facebook",
+    icon: FaFacebook,
+    href: "https://www.facebook.com/profile.php?id=61578269964686",
   },
-] as const
+] as const;
 
 export const interests = [
   {
-    name: 'Basketball',
+    name: "Basketball",
     image: warriors,
   },
   {
-    name: 'Soccer',
+    name: "Soccer",
     image: villa,
   },
   {
-    name: 'Baseball',
+    name: "Baseball",
     image: giants,
   },
   {
-    name: 'Football',
+    name: "Football",
     image: niners,
   },
   {
-    name: 'Tennis',
+    name: "Tennis",
     icon: PiTennisBallFill,
   },
   {
-    name: 'Fitness',
+    name: "Fitness",
     icon: FaDumbbell,
   },
   {
-    name: 'Movies',
+    name: "Movies",
     image: boxd,
-    href: 'https://letterboxd.com/aross2010/',
+    href: "https://letterboxd.com/aross2010/",
   },
   {
-    name: 'Music',
+    name: "Music",
     image: atcq,
   },
   {
-    name: 'Reading',
+    name: "Reading",
     icon: FaBookOpen,
   },
   {
-    name: 'Traveling',
+    name: "Traveling",
     icon: FaPlaneDeparture,
   },
-] as const
+] as const;
 
 export const skills = [
   {
-    name: 'TypeScript',
-    image: typescript,
-  },
-  {
-    name: 'Python',
-    image: python,
-  },
-  {
-    name: 'Java',
-    image: java,
-  },
-  {
-    name: 'C',
-    image: c,
-  },
-  {
-    name: 'SQL',
-    image: sql,
-  },
-  {
-    name: 'HTML',
+    name: "HTML",
     image: html,
   },
   {
-    name: 'CSS',
+    name: "CSS",
     image: css,
   },
   {
-    name: 'Tailwind CSS',
-    image: tailwind,
+    name: "JS",
+    image: javascript,
   },
   {
-    name: 'React',
+    name: "React",
     image: react,
   },
   {
-    name: 'Next.js',
-    image: next,
+    name: "TypeScript",
+    image: typescript,
   },
   {
-    name: 'Node.js',
+    name: "Node.js",
     image: node,
   },
   {
-    name: 'Flask',
-    image: flask,
+    name: "Express",
+    image: express,
   },
   {
-    name: 'Prisma',
-    image: prisma,
+    name: "C",
+    image: c,
   },
   {
-    name: 'MongoDB',
+    name: "Tailwind CSS",
+    image: tailwind,
+  },
+  {
+    name: "Next.js",
+    image: next,
+  },
+  {
+    name: "MongoDB",
     image: mongodb,
   },
   {
-    name: 'MySQL',
-    image: mysql,
-  },
-  {
-    name: 'Pandas',
-    image: pandas,
-  },
-  {
-    name: 'Scikit-learn',
-    image: scikit,
-  },
-  {
-    name: 'BeautifulSoup',
-    image: beautifulsoup,
-  },
-  {
-    name: 'Vercel',
+    name: "Vercel",
     image: vercel,
   },
   {
-    name: 'Git',
+    name: "Git",
     image: git,
   },
-] as const
+  {
+    name: "Cloudinary",
+    image: cloudinary,
+  },
+  {
+    name: "React Hook Form",
+    image: reactform,
+  },
+] as const;
 
 export const projects = [
   {
-    name: 'Cinefind, Web App',
-    image: cinefindWebApp,
+    name: "Tour Web App",
+    image: tourwebapp, // replace with your imported image
     description:
-      "Developed a full-stack web application for Cinefind which features a real-time dashboard of every free movie screening in a user's city.",
+      "Developed a full-featured tour booking web application using Next.js and TypeScript, featuring dynamic routing, tour search, booking, wishlist, and secure user authentication.",
     tech: [
-      {
-        src: typescript,
-        alt: 'typescript',
-      },
       {
         src: next,
-        alt: 'next.js',
+        alt: "Next.js",
       },
-      {
-        src: react,
-        alt: 'react',
-      },
-      { src: tailwind, alt: 'tailwind' },
-      {
-        src: mongodb,
-        alt: 'mongodb',
-      },
-      {
-        src: prisma,
-        alt: 'prisma',
-      },
-      {
-        src: vercel,
-        alt: 'vercel',
-      },
-    ],
-    tags: [],
-    link: 'https://cinefind.app',
-    code: '#',
-  },
-  {
-    name: 'Cinefind, Server',
-    image: cinefindEngine,
-    description:
-      'Developed a Python-based local server for Cinefind that finds every free movie screening in the U.S., sending real-time email alerts to thousands of users.',
-    tech: [
-      {
-        src: python,
-        alt: 'python',
-      },
-      {
-        src: jinja,
-        alt: 'jinja',
-      },
-      {
-        src: beautifulsoup,
-        alt: 'beautifulsoup',
-      },
-      {
-        src: mailgun,
-        alt: 'mailgun',
-      },
-      {
-        src: tmdb,
-        alt: 'tmdb',
-      },
-    ],
-    tags: [],
-    link: null,
-    code: '#',
-  },
-  {
-    name: 'X/Twitter Bot Detector',
-    image: twitterBot,
-    description:
-      'Developed a machine learning model and web app to classify X/Twitter accounts as bots or humans, using custom features, data preprocessing, and predictive analysis for high accuracy.',
-    tech: [
-      {
-        src: python,
-        alt: 'python',
-      },
-      {
-        src: flask,
-        alt: 'flask',
-      },
-      {
-        src: scikit,
-        alt: 'scikit',
-      },
-      {
-        src: pandas,
-        alt: 'pandas',
-      },
-    ],
-    link: null,
-    code: 'https://github.com/aross2010/twitter-bot-detector',
-  },
-  {
-    name: 'Vinyl Bot',
-    image: vinylBot,
-    description:
-      'Built automated Python scripts to send real-time email alerts for vinyl releases, integrating with the Discogs API to monitor and track wantlist records.',
-    tech: [
-      {
-        src: python,
-        alt: 'python',
-      },
-      {
-        src: jinja,
-        alt: 'jinja',
-      },
-      {
-        src: rpi,
-        alt: 'rpi',
-      },
-      {
-        src: cron,
-        alt: 'cron',
-      },
-      {
-        src: discogs,
-        alt: 'discogs',
-      },
-      {
-        src: reddit,
-        alt: 'reddit',
-      },
-    ],
-    link: null,
-    code: 'https://github.com/aross2010/vinyl-bot',
-  },
-  {
-    name: 'Spotlefy',
-    image: spotlefy,
-    description:
-      'Built a web app using the Spotify API that lets users create custom Heardle-style games by importing their playlists or searching any artist or playlist to generate song snippets for guessing.',
-    tech: [
       {
         src: typescript,
-        alt: 'typescript',
-      },
-      {
-        src: react,
-        alt: 'react',
-      },
-      {
-        src: next,
-        alt: 'next',
+        alt: "TypeScript",
       },
       {
         src: tailwind,
-        alt: 'tailwind',
+        alt: "Tailwind CSS",
       },
       {
-        src: vercel,
-        alt: 'vercel',
-      },
-      {
-        src: spotify,
-        alt: 'spotify',
-      },
-    ],
-    link: 'https://spotlefy.vercel.app/',
-    code: 'https://github.com/aross2010/spotlefy',
-  },
-  {
-    name: 'Split',
-    image: split,
-    description:
-      'Developed a full-stack web app for logging workouts and tracking fitness progress through interactive charts and data visualizations.',
-    tech: [
-      {
-        src: typescript,
-        alt: 'typescript',
-      },
-      {
-        src: react,
-        alt: 'react',
-      },
-      {
-        src: next,
-        alt: 'next',
-      },
-      {
-        src: tailwind,
-        alt: 'tailwind',
+        src: cloudinary,
+        alt: "Cloudinary",
       },
       {
         src: mongodb,
-        alt: 'mongodb',
+        alt: "MongoDB",
       },
       {
-        src: prisma,
-        alt: 'prisma',
-      },
-      {
-        src: vercel,
-        alt: 'vercel',
+        src: nextauth,
+        alt: "NextAuth",
       },
     ],
-    link: 'https://splitv1.vercel.app/',
-    code: 'https://github.com/aross2010/split',
+    link: "https://tour-gules-delta.vercel.app", // live demo link
+    code: "https://github.com/PrashantTimilsina/tour",
   },
-]
+
+  {
+    name: "Next.js Blog App",
+    image: blogwebapp, // replace with your imported image
+    description:
+      "Built a full-featured blog web application using Next.js, with server-side rendering, dynamic routing, and CRUD functionality for posts. Features include creating blogs, liking posts, commenting, bookmarking, and uploading images via Cloudinary.",
+    tech: [
+      {
+        src: next,
+        alt: "Next.js",
+      },
+
+      {
+        src: tailwind,
+        alt: "Tailwind CSS",
+      },
+      {
+        src: mongodb,
+        alt: "MongoDB",
+      },
+      {
+        src: cloudinary,
+        alt: "Cloudinary",
+      },
+    ],
+    link: "https://blog-app-liart-eight.vercel.app", // live demo link if available
+    code: "https://github.com/PrashantTimilsina/Blog-App",
+  },
+
+  {
+    name: "Rental Web App",
+    image: rentalWebApp,
+    description:
+      "Developed a full-stack rental web application that allows users to list, browse, and book properties, complete with authentication, search filters, and real-time booking management.",
+    tech: [
+      {
+        src: mongodb,
+        alt: "mongodb",
+      },
+      {
+        src: express,
+        alt: "express",
+      },
+      {
+        src: react,
+        alt: "react",
+      },
+      {
+        src: node,
+        alt: "node.js",
+      },
+      {
+        src: tailwind,
+        alt: "tailwind",
+      },
+      {
+        src: cloudinary,
+        alt: "cloudinary",
+      },
+
+      {
+        src: git,
+        alt: "git",
+      },
+    ],
+    tags: [],
+    link: "https://rental-frontend-ndxp.onrender.com/", // replace with your deployed link
+    code: "https://github.com/PrashantTimilsina/Rental_Webapp", // replace with GitHub repo link
+  },
+
+  {
+    name: "Daraz Web App",
+    image: darazWebApp,
+    description:
+      "Built a full-stack e-commerce web application inspired by Daraz, featuring product listings, shopping cart, user authentication, and order management using the MERN stack.",
+    tech: [
+      {
+        src: mongodb,
+        alt: "mongodb",
+      },
+      {
+        src: express,
+        alt: "express",
+      },
+      {
+        src: react,
+        alt: "react",
+      },
+      {
+        src: node,
+        alt: "node.js",
+      },
+      {
+        src: tailwind,
+        alt: "tailwind",
+      },
+      {
+        src: git,
+        alt: "git",
+      },
+    ],
+    tags: [],
+    link: "https://daraz-frontend-jcr3.onrender.com/", // replace with your deployed link if available
+    code: "https://github.com/PrashantTimilsina/Daraz", // replace with GitHub repo link if available
+  },
+
+  {
+    name: "Real-Time Chat App",
+    image: chatwebapp, // replace with your imported image
+    description:
+      "Built a real-time chat application using Socket.IO where users can join a shared room and chat together seamlessly, featuring instant message broadcasting and room-based communication.",
+    tech: [
+      {
+        src: react,
+        alt: "React",
+      },
+      {
+        src: node,
+        alt: "Node.js",
+      },
+      {
+        src: mongodb,
+        alt: "Mongodb",
+      },
+
+      {
+        src: express,
+        alt: "Express",
+      },
+      {
+        src: socketio,
+        alt: "Socket.IO",
+      },
+    ],
+    link: "https://chat-app-frontend-5rhy.onrender.com", // live demo if deployed
+    code: "https://github.com/PrashantTimilsina/chat_app",
+  },
+
+  {
+    name: "See more on github",
+    image: github,
+    description:
+      "See more of my projects and code examples on my GitHub profile, including full-stack and frontend apps built with modern technologies.",
+    tech: [],
+    link: "https://github.com/prashantTimilsina",
+    code: "https://github.com/PrashantTimilsina?tab=repositories",
+  },
+];
 
 export const experiences = [
   {
-    title: 'Operations Manager',
-    subtitle: 'AMC Theatres',
-    image: amc,
-    dates: 'Mar. 2022 - Aug. 2022',
+    title: "Kalika Multiple Campus (KMC)",
+    subtitle: "High School",
+    dates: "2021-2023",
     description:
-      'Managed HR functions such as recruiting, payroll, training, and optimizing team schedules to save $10K+ quarterly.',
+      "Completed my highschool from Kalika Multiple Campus located at Kajipokhari, Pokhara, Nepal.",
+    image: tick,
   },
   {
-    title: 'Software Engineer',
-    subtitle: 'Cinefind',
-    link: 'https://cinefind.app',
-    //   {
-    //     src: python,
-    //     alt: 'python',
-    //   },
-    //   {
-    //     src: typescript,
-    //     alt: 'typescript',
-    //   },
-    //   {
-    //     src: next,
-    //     alt: 'next.js',
-    //   },
-    //   {
-    //     src: react,
-    //     alt: 'react',
-    //   },
-    //   {
-    //     src: mongodb,
-    //     alt: 'mongodb',
-    //   },
-    // ],
-    tags: [
-      'Automation Engineering',
-      'Full-Stack Web Development',
-      'API Design',
-      'Third-Party Data',
-      'UX Design',
-      'Real-Time Notifications',
-      'Subscription Billing',
-    ],
-    image: cinefindLogoC,
-    dates: 'Jun. 2024 - present',
+    title:
+      "Bachelor of Science in Computer Science and Information Technology ",
+    subtitle: "Tribhuvan University",
+    dates: "2023-Running",
     description:
-      'Built and launched the full technical stack, using Python for web automation and real-time alerts, and Next.js with MongoDB for the web platform.',
-    emphasized: true,
+      "Currently pursuing my Bachelors degree in Prithivi Narayan Campus located at Bagar,Pokhara,Nepal.",
+    image: tick,
   },
-  {
-    title: 'Lead Basketball Instructor',
-    subtitle: 'Lifetime Activities',
-    image: lifetime,
-    dates: 'Jul. 2024 - present',
-    description:
-      'Orchestrated basketball skills programs for children and teens, achieving 25% enrollment growth per eight weeks.',
-  },
-  {
-    title: 'B.S. Software Engineering',
-    subtitle: 'San Jose State University',
-    image: sjsu,
-    dates: 'Dec. 2025',
-    description:
-      'Led diverse teams on various software development projects, utilizing SDLC methodologies to deliver high-quality solutions.',
-    gpa: 3.76,
-  },
-]
+];
 
 export const footerLinks = [
   {
-    name: 'LinkedIn',
+    name: "LinkedIn",
     icon: FaLinkedin,
-    href: 'https://www.linkedin.com/in/alex-ross-32b278236/',
+    href: "https://www.linkedin.com/in/prashant-timilsina",
   },
   {
-    name: 'GitHub',
+    name: "GitHub",
     icon: FaGithub,
-    href: 'https://www.github.com/aross2010',
+    href: "https://github.com/PrashantTimilsina",
   },
   {
-    name: 'Email',
-    icon: FaEnvelope,
-    href: 'mailto:@alex.ross@sjsu.edu',
+    name: "Facebook",
+    icon: FaFacebook,
+    href: "https://www.facebook.com/profile.php?id=61578269964686",
   },
-] as const
+] as const;

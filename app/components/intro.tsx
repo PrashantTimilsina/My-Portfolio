@@ -1,13 +1,13 @@
-'use client'
-import { motion } from 'framer-motion'
-import { socials } from '../lib/data'
-import { useSectionInView } from '../lib/hooks'
-import { RiDownloadLine } from 'react-icons/ri'
-import Button from './ui/button'
-import Link from 'next/link'
+"use client";
+import { motion } from "framer-motion";
+import { socials } from "../lib/data";
+import { useSectionInView } from "../lib/hooks";
+import { RiDownloadLine } from "react-icons/ri";
+import Button from "./ui/button";
+import Link from "next/link";
 
 export default function Intro() {
-  const { ref } = useSectionInView('Home', 0.75)
+  const { ref } = useSectionInView("Home", 0.75);
 
   const renderedSocials = socials.map(({ name, icon: Icon, href }) => {
     return (
@@ -16,33 +16,29 @@ export default function Intro() {
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="text-white/50 hover:text-sjsu-gold transition-all"
+        className="text-white/50 transition-all hover:text-sjsu-gold"
       >
-        <Icon className="md:text-3xl text-2xl" />
+        <Icon className="text-2xl md:text-3xl" />
       </Link>
-    )
-  })
+    );
+  });
 
   return (
-    <section
-      ref={ref}
-      id="home"
-      className="scroll-mt-96 mb-24"
-    >
+    <section ref={ref} id="home" className="mb-24 scroll-mt-96">
       <motion.div
         initial={{ opacity: 0, x: -25 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.5 }}
         viewport={{ once: true }}
       >
-        <h1 className="md:text-2xl text-xl sm:mb-6 mb-3 font-light tracking-wider text-gray-400">
+        <h1 className="mb-3 text-xl font-light tracking-wider text-gray-400 sm:mb-6 md:text-2xl">
           Welcome! I&apos;m
         </h1>
-        <h1 className="md:text-7xl text-5xl font-bold sm:mb-2 mb-1 flex items-end">
-          Alex Ross{' '}
+        <h1 className="mb-1 flex items-end text-5xl font-bold sm:mb-2 md:text-7xl">
+          Prashant Timilsina{" "}
         </h1>
-        <h2 className="lg:text-3xl font-medium text-2xl text-white/50 mb-8">
-          Software Engineer
+        <h2 className="mb-8 text-2xl font-medium text-white/50 lg:text-3xl">
+          Software Developer @ <span className="text-[#E1A522]">Nepal</span>
         </h2>
       </motion.div>
       <motion.p
@@ -50,19 +46,11 @@ export default function Intro() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.75 }}
         viewport={{ once: true }}
-        className="text-gray-400 text-lg mb-8 lg:w-[55%] md:w-[65%]"
+        className="mb-8 text-lg text-gray-400 md:w-[65%] lg:w-[55%]"
       >
-        I&apos;m a software engineering student at San Jose State University and
-        one of the engineers behind{' '}
-        <Link
-          href={'https://cinefind.app'}
-          target="_blank"
-          className="font-semibold hover:text-sjsu-gold transition-all"
-        >
-          Cinefind
-        </Link>
-        , a web platform designed to connect audiences across the country with
-        free, in-theater movie screenings.
+        I&apos;m currently a Computer Science Student from Nepal with experience
+        in designing and building full-stack applications using modern
+        technologies.{" "}
       </motion.p>
       <motion.div
         initial={{ opacity: 0, x: -25 }}
@@ -71,15 +59,12 @@ export default function Intro() {
         viewport={{ once: true }}
         className="flex items-center lg:gap-2"
       >
-        <Button
-          href="/Alex_Ross_Resume.pdf"
-          className="md:text-lg group"
-        >
+        <Button href="/Alex_Ross_Resume.pdf" className="group md:text-lg">
           Resume
           <RiDownloadLine className="transition-transform group-hover:translate-y-1" />
         </Button>
-        <ul className="flex md:gap-4 gap-3 items-center">{renderedSocials}</ul>
+        <ul className="flex items-center gap-3 md:gap-4">{renderedSocials}</ul>
       </motion.div>
     </section>
-  )
+  );
 }
