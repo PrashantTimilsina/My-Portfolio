@@ -11,7 +11,7 @@ export default function Footer() {
   });
 
   return (
-    <footer className="flex flex-col items-center py-12 text-gray-400/50">
+    <footer className="flex flex-col items-center py-12 text-black/50 dark:text-gray-400/50">
       <div className="mb-4 flex items-center justify-center gap-4">
         {renderedLinks}
       </div>

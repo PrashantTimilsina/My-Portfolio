@@ -45,7 +45,7 @@ export default function Contact() {
 
   return (
     <section ref={ref} id="contact" className="scroll-mt-24">
-      <Header animateOpacity className="text-center">
+      <Header animateOpacity className="text-center text-black dark:text-white">
         Contact Me!
       </Header>
       <motion.div
@@ -54,7 +54,7 @@ export default function Contact() {
         viewport={{ once: true }}
         transition={{ duration: 0.4, delay: 0.5 }}
       >
-        <p className="text-center text-lg text-gray-400 sm:px-12 md:px-32 lg:px-48">
+        <p className="text-center text-lg text-slate-800 dark:text-gray-400 sm:px-12 md:px-32 lg:px-48">
           Thank you for checking out my website! If you have any questions or
           would like to get in touch, feel free to reach out to me.
         </p>

@@ -9,7 +9,7 @@ import {
 import { PiTennisBallFill } from "react-icons/pi";
 import html from "@/public/html.png";
 import css from "@/public/css.png";
-import flask from "@/public/flask.png";
+
 import typescript from "@/public/typescript.png";
 import react from "@/public/react.png";
 import next from "@/public/next.png";
@@ -19,49 +19,19 @@ import express from "@/public/express.png";
 import mongodb from "@/public/mongo.png";
 import javascript from "@/public/javascript.png";
 import c from "@/public/c.png";
-import java from "@/public/java.png";
-import python from "@/public/python.png";
+
 import git from "@/public/git.png";
-import maria from "@/public/maria.png";
-import mysql from "@/public/mysql.png";
-import vscode from "@/public/vscode.png";
-import eclipse from "@/public/eclipse.png";
-import postman from "@/public/postman.png";
-import sql from "@/public/sql.png";
-import prisma from "@/public/prisma.png";
+
 import villa from "@/public/villa.png";
 import warriors from "@/public/warriors.png";
 import boxd from "@/public/boxd.png";
 import atcq from "@/public/atcq.png";
 import vercel from "@/public/vercel.png";
-import split from "@/public/split.png";
-import spotlefy from "@/public/spotlefy.png";
-import spotify from "@/public/spotify.png";
-import cinefindPersonal from "@/public/cinefind_me.png";
-import tmdb from "@/public/tmdb.png";
-import jinja from "@/public/jinja.png";
-import cron from "@/public/cron.png";
-import reddit from "@/public/reddit.png";
-import discogs from "@/public/discogs.png";
-import rpi from "@/public/rpi.png";
-import vinylBot from "@/public/vinyl-bot.png";
+
 import giants from "@/public/giants.png";
-import amc from "@/public/amc.png";
-import lifetime from "@/public/lifetime.png";
-import sjsu from "@/public/sjsu.png";
-import cinefindLogoC from "@/public/cinefind-logo-c.png";
-import figma from "@/public/figma.png";
+
 import niners from "@/public/49ers.png";
-import scikit from "@/public/scikit.png";
-import pandas from "@/public/pandas.png";
-import shap from "@/public/shap.png";
-import twitterBot from "@/public/twitter-bot.png";
-import githubBanner from "@/public/git-banner.jpg";
-import pl from "@/public/pl.png";
-import beautifulsoup from "@/public/beautifulsoup.png";
-import cinefindWebApp from "@/public/cinefind-web-app.png";
-import cinefindEngine from "@/public/cinefind-engine.png";
-import mailgun from "@/public/mailgun.png";
+
 import cloudinary from "@/public/cloudinary.png";
 import reactform from "@/public/reactform.png";
 import darazWebApp from "@/public/darazwebapp.jpg";
@@ -73,6 +43,7 @@ import chatwebapp from "@/public/chatwebapp.jpg";
 import socketio from "@/public/socketicon.png";
 import github from "@/public/github.jpg";
 import tick from "@/public/tick.png";
+import cplus from "@/public/cplus.png";
 export const links = [
   {
     hash: "#home",
@@ -194,6 +165,10 @@ export const skills = [
   {
     name: "C",
     image: c,
+  },
+  {
+    name: "C++",
+    image: cplus,
   },
   {
     name: "Tailwind CSS",

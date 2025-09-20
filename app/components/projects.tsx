@@ -1,16 +1,16 @@
-import Header from './ui/header'
-import { projects } from '../lib/data'
-import Link from 'next/link'
-import { FaGithub } from 'react-icons/fa6'
-import Project from './ui/project'
-import { useSectionInView, useWindowSizeHook } from '../lib/hooks'
-import { motion } from 'framer-motion'
-import { Fragment } from 'react'
+import Header from "./ui/header";
+import { projects } from "../lib/data";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa6";
+import Project from "./ui/project";
+import { useSectionInView, useWindowSizeHook } from "../lib/hooks";
+import { motion } from "framer-motion";
+import { Fragment } from "react";
 
 export default function Projects() {
-  const width = useWindowSizeHook()
+  const width = useWindowSizeHook();
 
-  const { ref } = useSectionInView('Projects', width > 700 ? 0.4 : 0.15)
+  const { ref } = useSectionInView("Projects", width > 700 ? 0.4 : 0.15);
 
   const renderedProjects = projects.map((project, i) => {
     return (
@@ -20,7 +20,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4, delay: 0.5 }}
           viewport={{ once: true }}
-          className="md:block hidden"
+          className="hidden md:block"
         >
           <Project project={project} />
         </motion.li>
@@ -29,22 +29,18 @@ export default function Projects() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4, delay: 0.5 }}
           viewport={{ once: true }}
-          className="md:hidden block"
+          className="block md:hidden"
         >
           <Project project={project} />
         </motion.li>
       </Fragment>
-    )
-  })
+    );
+  });
 
   return (
-    <section
-      id="projects"
-      className="scroll-mt-24"
-      ref={ref}
-    >
-      <Header>Projects</Header>
-      <ul className="grid md:grid-cols-2 grid-cols-1 gap-4 md:auto-rows-fr">
+    <section id="projects" className="scroll-mt-24" ref={ref}>
+      <Header className="text-black dark:text-white">Projects</Header>
+      <ul className="grid grid-cols-1 gap-4 md:auto-rows-fr md:grid-cols-2">
         {renderedProjects}
         {projects.length % 2 !== 0 && (
           <motion.div
@@ -58,8 +54,8 @@ export default function Projects() {
             className="flex flex-col"
           >
             <Link
-              href={'https://github.com/aross2010'}
-              className="h-full bg-transparent border border-sjsu-gold font-extrabold text-lg text-sjsu-gold hover:text-white hover:bg-sjsu-gold transition-all rounded-lg md:flex hidden flex-col items-center justify-center"
+              href={"https://github.com/aross2010"}
+              className="hidden h-full flex-col items-center justify-center rounded-lg border border-sjsu-gold bg-transparent text-lg font-extrabold text-sjsu-gold transition-all hover:bg-sjsu-gold hover:text-white md:flex"
             >
               <h2 className="flex items-center gap-1">
                 AND MORE ON GITHUB! <FaGithub />
@@ -70,5 +66,5 @@ export default function Projects() {
       </ul>
       <form></form>
     </section>
-  )
+  );
 }

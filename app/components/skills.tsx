@@ -1,11 +1,11 @@
-import { skills } from '../lib/data'
-import { useSectionInView } from '../lib/hooks'
-import Header from './ui/header'
-import IconCard from './ui/icon-card'
-import { motion } from 'framer-motion'
+import { skills } from "../lib/data";
+import { useSectionInView } from "../lib/hooks";
+import Header from "./ui/header";
+import IconCard from "./ui/icon-card";
+import { motion } from "framer-motion";
 
 export default function Skills() {
-  const { ref } = useSectionInView('Skills', 0.75)
+  const { ref } = useSectionInView("Skills", 0.75);
 
   const renderedSkills = skills.map((skill, i) => {
     return (
@@ -18,19 +18,19 @@ export default function Skills() {
       >
         <IconCard {...skill} />
       </motion.li>
-    )
-  })
+    );
+  });
 
   return (
     <section
       ref={ref}
       id="skills"
-      className="scroll-mt-24"
+      className="scroll-mt-24 text-black dark:text-white"
     >
       <Header>Top Skills</Header>
-      <ul className="grid lg:grid-cols-10 md:grid-cols-5 grid-cols-4 gap-2">
+      <ul className="grid grid-cols-4 gap-2 md:grid-cols-5 lg:grid-cols-10">
         {renderedSkills}
       </ul>
     </section>
-  )
+  );
 }
