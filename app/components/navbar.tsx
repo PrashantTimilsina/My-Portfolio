@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useActiveSectionContext } from "../context/section-context";
 import { useEffect } from "react";
 import { useWindowSizeHook } from "../lib/hooks";
-import { ModeToggle } from "./mode-toggle";
+import { ModeToggle } from "./Mode-toggle";
 
 export default function Navbar() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
