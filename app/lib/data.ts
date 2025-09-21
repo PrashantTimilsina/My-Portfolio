@@ -689,7 +689,7 @@ export const projects = [
 
   {
     name: "Rental Web App",
-    image: "/rentalWebApp.jpg",
+    image: "/rentalwebapp.jpg",
     description:
       "Developed a full-stack rental web application that allows users to list, browse, and book properties, complete with authentication, search filters, and real-time booking management.",
     tech: [
@@ -730,7 +730,7 @@ export const projects = [
 
   {
     name: "Daraz Web App",
-    image: "/darazWebApp.jpg",
+    image: "/darazwebapp.jpg",
     description:
       "Built a full-stack e-commerce web application inspired by Daraz, featuring product listings, shopping cart, user authentication, and order management using the MERN stack.",
     tech: [
