@@ -41,12 +41,12 @@ import socketio from "@/public/socketicon.png";
 
 import tick from "@/public/tick.png";
 import cplus from "@/public/cplus.png";
-import blogwebapp from "./../assets/images/blogwebapp.jpg";
-import tourwebapp from "./../assets/images/tourwebapp.jpg";
-import chatwebapp from "./../assets/images/chatwebapp.jpg";
-import rentalwebapp from "./../assets/images/rentalwebapp.jpg";
-import darazwebapp from "./../assets/images/darazwebapp.jpg";
-import github from "./../assets/images/github.jpg";
+import blogwebapp from "@/public/blogwebapp.png";
+import tourwebapp from "@/public/tourwebapp.png";
+import chatwebapp from "@/public/chatwebapp.png";
+import rentalwebapp from "@/public/rentalwebapp.png";
+import darazwebapp from "@/public/darazwebapp.png";
+import github from "@/public/githubme.png";
 
 export const links = [
   {
