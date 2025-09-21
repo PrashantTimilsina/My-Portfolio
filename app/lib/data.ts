@@ -41,6 +41,13 @@ import socketio from "@/public/socketicon.png";
 
 import tick from "@/public/tick.png";
 import cplus from "@/public/cplus.png";
+import blogwebapp from "./../assets/images/blogwebapp.jpg";
+import tourwebapp from "./../assets/images/tourwebapp.jpg";
+import chatwebapp from "./../assets/images/chatwebapp.jpg";
+import rentalwebapp from "./../assets/images/rentalwebapp.jpg";
+import darazwebapp from "./../assets/images/darazwebapp.jpg";
+import github from "./../assets/images/github.jpg";
+
 export const links = [
   {
     hash: "#home",
@@ -197,7 +204,7 @@ export const skills = [
 export const projects = [
   {
     name: "Tour Web App",
-    image: "/tourwebapp.jpg", // replace with your imported image
+    image: tourwebapp, // replace with your imported image
     description:
       "Developed a full-featured tour booking web application using Next.js and TypeScript, featuring dynamic routing, tour search, booking, wishlist, and secure user authentication.",
     tech: [
@@ -232,7 +239,7 @@ export const projects = [
 
   {
     name: "Next.js Blog App",
-    image: "/blogwebapp.jpg", // replace with your imported image
+    image: blogwebapp, // replace with your imported image
     description:
       "Built a full-featured blog web application using Next.js, with server-side rendering, dynamic routing, and CRUD functionality for posts. Features include creating blogs, liking posts, commenting, bookmarking, and uploading images via Cloudinary.",
     tech: [
@@ -260,7 +267,7 @@ export const projects = [
 
   {
     name: "Rental Web App",
-    image: "/rentalwebapp.jpg",
+    image: rentalwebapp,
     description:
       "Developed a full-stack rental web application that allows users to list, browse, and book properties, complete with authentication, search filters, and real-time booking management.",
     tech: [
@@ -301,7 +308,7 @@ export const projects = [
 
   {
     name: "Daraz Web App",
-    image: "/darazwebapp.jpg",
+    image: darazwebapp,
     description:
       "Built a full-stack e-commerce web application inspired by Daraz, featuring product listings, shopping cart, user authentication, and order management using the MERN stack.",
     tech: [
@@ -337,7 +344,7 @@ export const projects = [
 
   {
     name: "Real-Time Chat App",
-    image: "/chatwebapp.jpg", // replace with your imported image
+    image: chatwebapp, // replace with your imported image
     description:
       "Built a real-time chat application using Socket.IO where users can join a shared room and chat together seamlessly, featuring instant message broadcasting and room-based communication.",
     tech: [
@@ -369,7 +376,7 @@ export const projects = [
 
   {
     name: "See more on github",
-    image: "/github.jpg",
+    image: github,
     description:
       "See more of my projects and code examples on my GitHub profile, including full-stack and frontend apps built with modern technologies.",
     tech: [],
