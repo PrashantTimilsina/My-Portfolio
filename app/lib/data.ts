@@ -38,7 +38,7 @@ import reactform from "@/public/reactform.png";
 import nextauth from "@/public/nextauth.jpg";
 
 import socketio from "@/public/socketicon.png";
-import github from "@/public/github.jpg";
+
 import tick from "@/public/tick.png";
 import cplus from "@/public/cplus.png";
 export const links = [
@@ -369,7 +369,7 @@ export const projects = [
 
   {
     name: "See more on github",
-    image: github,
+    image: "/github.jpg",
     description:
       "See more of my projects and code examples on my GitHub profile, including full-stack and frontend apps built with modern technologies.",
     tech: [],
