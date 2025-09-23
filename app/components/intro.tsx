@@ -67,7 +67,7 @@ export default function Intro() {
           className="flex items-center lg:gap-2"
         >
           <Button
-            href="/Alex_Ross_Resume.pdf"
+            href="/Prashant_Timilsina_Resume.pdf"
             className="group font-semibold md:text-lg"
           >
             Resume
