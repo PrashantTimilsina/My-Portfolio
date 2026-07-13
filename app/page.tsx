@@ -7,6 +7,7 @@ import Projects from './components/projects'
 import Skills from './components/skills'
 import Experience from './components/experience'
 import Contact from './components/contact'
+import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Frontend Developer in Pokhara, Nepal",
 
